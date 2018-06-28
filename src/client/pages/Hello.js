@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Nav from './Nav';
+import Nav from '../components/Nav';
 
 export default class Hello extends Component {
   constructor(props) {
@@ -16,7 +16,6 @@ export default class Hello extends Component {
   render() {
     return (
       <div>
-        <Nav />
         <div className="hello">
           {this.state.username ? (
             <h1>Hello {this.state.username}!</h1>
